@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey form</title>
+    <link rel="stylesheet" href="/surveyformstyles.css">
+</head>
+<body>
+    <div id="header">
+        <H1 id="Title">Welcome to the Assignment 2 "Survey Form"</H1>
+        <p id="description">This survey is designed to demonstrage a set of responsive web design skills.</p>
+    </div>
+
+    <div id="main">
+        <form id="survey-form" action="">
+            <div id="survey-content">
+                <div class="content-div">
+                    <label id="name-label" for="name"> <h4>Full name:</h4><input id="name" type="text" name="name" placeholder="Enter your name"> </label>
+                </div>
+
+                <div class="content-div">
+                    <label id="email-label" for="email"> <h4>Email address:</h4><input id="email" type="email" name="email" placeholder="Enter your email address"> </label>
+                </div>
+            
+                <div class="content-div">
+                    <label id="number-label" for="age"> <h4>Age (optional):</h4><input id="number" type="number" name="age" min="18" max="100" placeholder="Enter your age"> </label>
+                </div>
+            
+                <div class="content-div">
+                    <label for="language"><h4>What development field do you specialise in?</h4></label>
+                    <select name="language" id="dropdown">
+                        <option value="Front-end">Front-end</option>
+                        <option value="Back-end">Back-end</option>
+                        option value="Full-stack">Full-stack</option>
+                    </select>
+                </div>
+
+                <div class="content-div">
+                    <label for="language"><h4>What is your favourite language?</h4></label>
+                        <input type="radio" name="language" value="JavaScript"/> JavaScript
+                        <input type="radio" name="language" value="Python"/> Python
+                        <input type="radio" name="language" value="Java"/> Java
+                        <input type="radio" name="language" value="Ruby"/> Ruby
+                        <input type="radio" name="language" value="Other"/> Other
+                </div>
+            
+                <div class="content-div">
+                    <label for="topics"><h4>What topics have you mastered so far?</h4></label>
+                        <input type="checkbox" name="topics" value="HTML5"/> HTML5 <br>
+                        <input type="checkbox" name="topics" value="CSS3"/> CSS3 <br>
+                        <input type="checkbox" name="topics" value="Libraries"/> Libraries <br>
+                        <input type="checkbox" name="topics" value="JavaScript"/> JavaScript <br>
+                        <input type="checkbox" name="topics" value="APIs"/> APIs <br>
+                        <input type="checkbox" name="topics" value="Data"/> Data analysis <br>
+                        <input type="checkbox" name="topics" value="Python"/> Python <br>
+                        <input type="checkbox" name="topics" value="Quality"/> Quality Assurance
+                </div>
+
+                <div id="career_div" class="content-div">
+                    <label for="career"><h4>What is your development career aspiration?</h4></label>
+                    <textarea name="career" id="career" cols="30" rows="10"></textarea>
+                </div>
+            
+                <div class="content-div">
+                    <input class="btn" type="submit" name="submit">
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
